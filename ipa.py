@@ -2,7 +2,6 @@ import re
 import subprocess
 from sys import platform
 
-cmd = ""
 if platform == "win32":
     ints = subprocess.check_output(["ipconfig", "/all"])
 else:
