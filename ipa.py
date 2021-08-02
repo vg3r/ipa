@@ -16,5 +16,5 @@ for i in ints.split('\n'):
         a = re.match('^\w[^\.]+?:', i)
         print(a.group())
     elif re.match('(.*(?:inet|IPv[46]\s).*)', i):
-        b = re.match(r'(.*(inet6?|IPv[46]).*?\w)(?:\s|%\()', i)
+        b = re.match(r'(.*(inet6?|IPv[46].*.\ :).*?\w)(?=[\s%\(])', i)
         print(b.group())
