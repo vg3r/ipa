@@ -15,6 +15,6 @@ for i in ints.split('\n'):
     if re.match(r'^\w[^\.]+?:', i):
         a = re.match('^\w[^\.]+?:', i)
         print(a.group())
-    elif re.match('(.*(?:inet|IPv[46][^\%]+))', i):
+    elif re.match('(.*(?:inet|IPv[46]\s).*)', i):
         b = re.match(r'(.*(?:inet|IPv[46]|.*.\ :).*?\s.*?)\s', i)
-        print(re.sub('\t', '  ', b.group()))
+        print(b.group())
