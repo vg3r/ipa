@@ -1,5 +1,8 @@
-# ipa
+# ipa.pl
 
-IP Address.py
+Simple script to display IP addresses
 
-Simple script to show just the IPv4/v6 addresses on all the interfaces on a machine
+    ipa.pl <options>
+
+         -6 Include IPv6 addresses
+         -u Include unassigned interfaces
